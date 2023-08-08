@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form đơn giản</title>
+</head>
+<style>
+    #luotweb {
+        margin-left: 111px;
+    }
+
+    #dulich {
+        margin-left: 111px;
+    }
+
+    #amnhac {
+        margin-left: 9px;
+    }
+
+    #docsach {
+        margin-left: 15px;
+    }
+
+    #thongtin {
+        margin-left: 111px;
+    }
+</style>
+
+
+<body>
+    <div style="border: 5px solid; background-color: aqua ; width: 410px;;">
+        <form action="#" method="get">
+            <p style="background-color: red; width: 400px; text-align: center; padding: 5px;">Sở thích của bạn</p>
+            <label for="name" style="margin-left: 40px;"> Họ và tên: </label>
+            <input type="text" id="name"><br>
+            <label for="Email" style="margin-left: 69px;">Email</label>
+            <input type="text" id="Email" style="width: 100px;"><br>
+            <label for="soThich" style="margin-left: 50px;">Sở thích</label>
+            <input type="checkbox" id="thethao" name="soThich">
+            <label for="thethao">Thể thao</label>
+            <input type="checkbox" id="amnhac" name="soThich">
+            <label for="amnhac">Âm nhạc</label>
+            <input type="checkbox" id="docsach" name="soThich">
+            <label for="docsach">Đọc sách</label><br>
+
+            <input type="checkbox" id="luotweb" name="soThich">
+            <label for="luotweb">Lướt web</label>
+            <input type="checkbox" id="choigame" name="soThich">
+            <label for="choigame">Chơi game</label>
+            <input type="checkbox" id="dienanh" name="soThich">
+            <label for="dienanh">Điện ảnh</label><br>
+
+            <input type="checkbox" id="dulich" name="soThich">
+            <label for="dulich">Du lịch</label><br>
+
+            <input type="submit" id="thongtin" value="Gửi thông tin">
+            <input type="reset" value="Nhập lại">
+        </form>
+    </div>
+
+    <div style="background-color:bisque ;">
+        <form>
+            <h3 style="color:rgb(40, 40, 252);">Đắng kí học viên</h3>
+            <label for="name2">Họ và tên</label>
+            <input type="text" id="name2" name="hocvien" style="margin-left: 30px;"><br>
+            <label for="ngaysinh">Ngày sinh</label>
+            <input type="date" id="ngaysinh" name="hocvien" style="margin-left: 27px;"><br>
+            <label for="gender">Giới tính</label>
+            <input type="radio" name="gender" id="male" style="margin-left: 35px;">
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" ;>
+            <label for="female">Nữ</label><br>
+            <label for="diachi">Địa chỉ</label>
+            <textarea name="diachi" id="diachi" cols="30" rows="10" style="margin-left: 45px;   "></textarea><br>
+            <label for="lop">Lớp</label>
+            <select name="chonLop" id="lop" style="margin-left: 65px;">
+                <option value="chon">--Chọn lớp--</option>
+                <option value="Lớp 1">Lớp 1</option>
+                <option value="Lớp 2">Lớp 2</option>
+                <option value="Lớp 3">Lớp 3</option>
+                <option value="Lớp 4">Lớp 4</option>
+            </select><br>
+            <label for="Email">Email</label>
+            <input type="text" name="Email" id="Email" style="margin-left: 52px;"><br>
+            <label for="dienthoai">Điện thoại</label>
+            <input type="number" id="dienthoai" style="margin-left: 23px;">
+            <input type="submit" id="dangky" value="Đăng ký" >
+            <input type="reset" id="reset" value="Nhập lại">
+        </form>
+
+    </div>
+</body>
+
+</html>
